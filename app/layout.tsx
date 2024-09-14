@@ -1,17 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Widget from '../components/Widget'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ThemeProvider } from '@/components/theme-provider'
-import {
-  TextSizeContext,
-  TextSizeProvider
-} from '@/components/textSize-provider'
-import { useContext } from 'react'
+import { TextSizeProvider } from '@/components/textSize-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Essential Fitness',
@@ -25,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex min-h-screen flex-col`}>
         <TextSizeProvider>
           <ThemeProvider
             attribute='class'
@@ -33,10 +29,12 @@ export default function RootLayout({
             disableTransitionOnChange
             enableSystem
           >
-            <Navbar />
-            {children}
-            <Widget />
-            <Footer />
+            <div className='flex flex-grow flex-col justify-between'>
+              <Navbar />
+              <main className='flex-1'>{children}</main>
+              <Widget />
+              <Footer />
+            </div>
           </ThemeProvider>
         </TextSizeProvider>
       </body>
