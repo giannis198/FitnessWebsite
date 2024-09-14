@@ -50,12 +50,17 @@ function Widget() {
   return (
     <>
       <Sheet>
-        <SheetTrigger className='absolute left-1'>
-          <AccessibilityIcon size={42} />
+        <SheetTrigger className='absolute left-5 rounded-full bg-blue-600 ring-2 ring-blue-100 transition-all hover:bg-blue-300'>
+          <div className='hidden md:flex'>
+            <AccessibilityIcon size={64} color='white' />
+          </div>
+          <div className='md:hidden'>
+            <AccessibilityIcon size={44} color='white' />
+          </div>
         </SheetTrigger>
         <SheetContent side='left'>
-          <SheetHeader>
-            <SheetTitle className='mt-10'>Μενού Προσβασιμότητας</SheetTitle>
+          <SheetHeader className='flex items-center justify-center'>
+            <SheetTitle className='mt-10 '>Μενού Προσβασιμότητας</SheetTitle>
             <SheetDescription className='mt-4 grid grid-cols-2 gap-4'>
               <button onClick={increaseTextSize}>
                 <WidgetButton icon={ALargeSmall} text='Μεγάλο κείμενο' />
