@@ -1,13 +1,16 @@
 import About from '@/components/About'
-import Address from '@/components/Address'
+import Contact from '@/components/Contact'
 import Classes from '@/components/Classes'
 import Reviews from '@/components/Reviews'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import WorkingTime from '@/components/WorkingTime'
 import Link from 'next/link'
 import { MapPin } from 'lucide-react'
-import Social from '@/components/Social'
+
 import { Separator } from '@/components/ui/separator'
+import Carouzel from '@/components/Carouzel'
+import Location from '@/components/Location'
+import CTA from '@/components/CTA'
 
 const HomePage = () => {
   return (
@@ -21,23 +24,19 @@ const HomePage = () => {
 
           <h1 className='text-2xl'>Essential Fitness</h1>
         </div>
-        <div className='space-y-2'>
-          <WorkingTime />
-          <Separator />
-          <Link
-            href='https://www.google.com/maps/dir/40.584272,22.9695529/Egnatia+95,+Thessaloniki+546+35/@40.6088135,22.9189326,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14a839009f78b46b:0x9f96a321f4e8d8a7!2m2!1d22.9490971!2d40.6335823?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D'
-            className='flex items-center space-x-1'
-          >
-            <MapPin size={14} />
-            <p className='text-xs'>Egnatias 95, Thessaloniki</p>
-          </Link>
-          <Social />
+        <Carouzel />
+        <div className='md:hidden'>
+          <CTA />
         </div>
 
-        <Classes />
+        <WorkingTime />
+        <Separator />
+        <Location />
+
+        {/* <Classes /> */}
         <About />
         <Reviews />
-        <Address />
+        <Contact />
       </div>
     </section>
   )

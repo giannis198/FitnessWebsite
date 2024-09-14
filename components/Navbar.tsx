@@ -6,7 +6,6 @@ import Social from './Social'
 const Navbar = () => {
   return (
     <nav className='flex w-full flex-col items-center justify-center space-y-4 rounded-lg'>
-
       <Link href='/'>
         <Image
           src={img}
@@ -14,7 +13,7 @@ const Navbar = () => {
           className='rounded-lg object-cover'
         />
       </Link>
-      <div className='container flex gap-x-4'>
+      {/* <div className='container flex space-x-4'>
         <Link href='#classes' className='text-sm'>
           Classes
         </Link>
@@ -25,9 +24,9 @@ const Navbar = () => {
           Reviews
         </Link>
         <Link href='#address' className='text-sm'>
-          Address
+          Contact
         </Link>
-      </div>
+      </div> */}
     </nav>
   )
 }
