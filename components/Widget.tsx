@@ -51,7 +51,7 @@ function Widget() {
     <>
       <Sheet>
         <SheetTrigger className='absolute left-1'>
-          <AccessibilityIcon size={24} />
+          <AccessibilityIcon size={42} />
         </SheetTrigger>
         <SheetContent side='left'>
           <SheetHeader>
