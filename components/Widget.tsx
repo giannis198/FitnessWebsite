@@ -11,6 +11,7 @@ import {
 
 import {
   AccessibilityIcon,
+  PersonStanding,
   ALargeSmall,
   Contrast,
   Link2Off,
@@ -50,12 +51,12 @@ function Widget() {
   return (
     <>
       <Sheet>
-        <SheetTrigger className='absolute right-5 top-2/3 rounded-full bg-blue-600 ring-2 ring-blue-100 transition-all hover:bg-blue-300'>
+        <SheetTrigger className='fixed  right-5 top-1/2 rounded-full bg-blue-600 ring-2 ring-blue-100 transition-all hover:bg-blue-300'>
           <div className='hidden md:flex'>
-            <AccessibilityIcon size={64} color='white' />
+            <PersonStanding size={64} color='white' />
           </div>
           <div className='md:hidden'>
-            <AccessibilityIcon size={44} color='white' />
+            <PersonStanding size={44} color='white' />
           </div>
         </SheetTrigger>
         <SheetContent side='left'>

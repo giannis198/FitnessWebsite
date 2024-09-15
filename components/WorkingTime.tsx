@@ -16,16 +16,16 @@ const WorkingTime = () => {
         <AccordionItem value='item-1'>
           <AccordionTrigger>
             <Clock />
-            {openNow ? 'Open Now' : 'Closed Now'}
+            {openNow ? 'Ανοιχτά' : 'Κλειστά'}
           </AccordionTrigger>
           <AccordionContent>
-            <Day day='Monday' hour='8:00 - 22:30' />
-            <Day day='Tuesday' hour='8:00 - 22:30' />
-            <Day day='Wednesday' hour='8:00 - 22:30' />
-            <Day day='Thursday' hour='8:00 - 22:30' />
-            <Day day='Friday' hour='8:00 - 22:30' />
-            <Day day='Saturday' hour='Closed' />
-            <Day day='Sunday' hour='Closed' />
+            <Day day='Δευτέρα' hour='8:00 - 22:30' />
+            <Day day='Τρίτη' hour='8:00 - 22:30' />
+            <Day day='Τετάρτη' hour='8:00 - 22:30' />
+            <Day day='Πέμπτη' hour='8:00 - 22:30' />
+            <Day day='Παρασκευή' hour='8:00 - 22:30' />
+            <Day day='Σάββατο' hour='Κλειστά' />
+            <Day day='Κυριακή' hour='Κλειστά' />
           </AccordionContent>
         </AccordionItem>
       </Accordion>

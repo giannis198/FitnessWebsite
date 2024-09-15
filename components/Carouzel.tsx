@@ -21,6 +21,7 @@ import img2 from '../public/img2.jpg'
 import Image from 'next/image'
 import CTA from './CTA'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const images = [entrance, lobby, img1, img2, img3, img4, img5, img6]
 
@@ -28,14 +29,16 @@ const Carouzel = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }))
   return (
     <div className='w-full items-center justify-between md:flex md:pr-12'>
-      <div className='space-y-5'>
-        <p className='hidden w-2/4 md:block md:text-3xl'>
-          Our mission is to provide a place where everyone’s workout is based on
-          their ESSENTIAL needs
+      <div className='flex flex-col  justify-center'>
+        <p className='hidden w-2/4 pb-5 md:block md:text-3xl'>
+          Η αποστολή μας είναι να παρέχουμε ένα μέρος όπου η προπόνηση όλων
+          βασίζεται στις Essential ανάγκες.
         </p>
-        <Button className='hidden bg-orange-800 text-white hover:bg-orange-950 md:block'>
-          Contact Us
-        </Button>
+        <Link href='https://essentialfitnessskg.setmore.com/book'>
+          <Button className='hidden bg-orange-800 text-white hover:bg-orange-950 md:block'>
+            Book now
+          </Button>
+        </Link>
       </div>
 
       <Carousel

@@ -1,11 +1,9 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Classes from '@/components/Classes'
-import Reviews from '@/components/Reviews'
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import WorkingTime from '@/components/WorkingTime'
-import Link from 'next/link'
-import { MapPin } from 'lucide-react'
 
 import { Separator } from '@/components/ui/separator'
 import Carouzel from '@/components/Carouzel'
@@ -15,7 +13,7 @@ import CTA from '@/components/CTA'
 const HomePage = () => {
   return (
     <section className='py-4'>
-      <div className='container space-y-6'>
+      <div className='container space-y-5'>
         <div className='flex items-center gap-4'>
           <Avatar className='h-16 w-16 p-0'>
             <AvatarImage src='aw-image-700.webp' className='object-cover' />
@@ -31,11 +29,11 @@ const HomePage = () => {
 
         <WorkingTime />
         <Separator />
+        <Classes />
         <Location />
 
-        {/* <Classes /> */}
         <About />
-        <Reviews />
+        {/* <Reviews /> */}
         <Contact />
       </div>
     </section>
