@@ -21,12 +21,12 @@ const Classes = () => {
       <h2 className='font-bold underline md:text-xl'>Υπηρεσίες</h2>
       <div className='mx-auto grid-cols-2 items-start  justify-center gap-10  space-y-4 md:grid md:w-2/3 '>
         <div>
-          <Card className='bg-background'>
+          <Card className='bg-background ring-1 ring-foreground'>
             <CardHeader>
               <CardTitle className='flex items-center justify-center pb-4'>
                 Personal Taining
               </CardTitle>
-              <CardDescription className='flex w-full items-center justify-center text-pretty'>
+              <CardDescription className='flex w-full items-center justify-center text-wrap'>
                 Ανακάλυψε τα οφέλη του Personal training με την Essential
                 fitness και δώσε ώθηση στους στόχους σου!
               </CardDescription>
@@ -62,7 +62,7 @@ const Classes = () => {
           </Card>
         </div>
         <div>
-          <Card className='bg-background'>
+          <Card className='bg-background ring-1 ring-foreground'>
             <CardHeader>
               <CardTitle className='flex items-center justify-center pb-4'>
                 Pilates

@@ -12,7 +12,11 @@ const WorkingTime = () => {
   const openNow = isOpenNow()
   return (
     <div className='text-sm'>
-      <Accordion type='single' collapsible>
+      <Accordion
+        type='single'
+        collapsible
+        className='px-2 ring-1 ring-foreground'
+      >
         <AccordionItem value='item-1'>
           <AccordionTrigger>
             <Clock />
