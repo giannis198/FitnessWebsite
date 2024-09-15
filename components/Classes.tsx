@@ -24,7 +24,7 @@ const Classes = () => {
           <Card className='bg-background ring-1 ring-foreground'>
             <CardHeader>
               <CardTitle className='flex items-center justify-center pb-4'>
-                Personal Taining
+                Personal Training
               </CardTitle>
               <CardDescription className='flex w-full items-center justify-center text-wrap'>
                 Ανακάλυψε τα οφέλη του Personal training με την Essential
