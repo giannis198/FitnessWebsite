@@ -35,9 +35,7 @@ const HomePage = () => {
         <Separator />
         <Classes />
         <Location />
-
         <About />
-        {/* <Reviews /> */}
         <Contact />
       </div>
     </section>
