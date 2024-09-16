@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Accordion,
   AccordionContent,
@@ -7,9 +9,19 @@ import {
 import { isOpenNow } from '@/lib/utils'
 import { Clock } from 'lucide-react'
 import Day from './Day'
+import { useEffect, useState } from 'react'
 
 const WorkingTime = () => {
-  const openNow = isOpenNow()
+  const [openNow, setOpenNow] = useState(isOpenNow())
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setOpenNow(isOpenNow())
+    }, 60000) // Check every minute
+
+    return () => clearInterval(intervalId) // Cleanup interval on component unmount
+  }, [])
+
   return (
     <div className='text-sm'>
       <Accordion
