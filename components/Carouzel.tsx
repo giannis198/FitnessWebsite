@@ -29,8 +29,8 @@ const Carouzel = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }))
   return (
     <div className='w-full items-center justify-between md:flex md:pr-12'>
-      <div className='flex flex-col  justify-center'>
-        <p className='hidden w-2/4 pb-5 md:block md:text-3xl'>
+      <div className='flex w-1/3 flex-col  justify-center'>
+        <p className='hidden pb-5 md:block md:text-3xl'>
           Η αποστολή μας είναι να παρέχουμε ένα μέρος όπου η προπόνηση όλων
           βασίζεται στις Essential ανάγκες.
         </p>

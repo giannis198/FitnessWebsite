@@ -90,11 +90,3 @@
   }
 }
 
-/* globals.css */
-html {
-  font-size: 16px; /* You can adjust this value */
-}
-
-body {
-  font-size: 1rem; /* This will be 16px if html font-size is 16px */
-}

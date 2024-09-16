@@ -17,7 +17,7 @@ import {
 
 const Classes = () => {
   return (
-    <div className='space-y-6  '>
+    <div className='space-y-6'>
       <h2 className='font-bold underline md:text-xl'>Υπηρεσίες</h2>
       <div className='mx-auto grid-cols-2 items-start  justify-center gap-10  space-y-4 md:grid md:w-2/3 '>
         <div>

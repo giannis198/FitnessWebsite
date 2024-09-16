@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} flex min-h-screen flex-col`}>
+      <body className={`${inter.className} ove flex min-h-screen flex-col`}>
         <TextSizeProvider>
           <ThemeProvider
             attribute='class'
@@ -31,7 +31,7 @@ export default function RootLayout({
           >
             <div className='flex flex-grow flex-col justify-between'>
               <Navbar />
-              <main className='flex-1'>{children}</main>
+              <main className='flex-1 overflow-x-hidden'>{children}</main>
               <Widget />
               <Footer />
             </div>

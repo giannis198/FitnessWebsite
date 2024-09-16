@@ -23,7 +23,7 @@ const WorkingTime = () => {
   }, [])
 
   return (
-    <div className='text-sm'>
+    <div className='mx-auto md:w-2/3'>
       <Accordion
         type='single'
         collapsible

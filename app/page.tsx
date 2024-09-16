@@ -9,19 +9,23 @@ import { Separator } from '@/components/ui/separator'
 import Carouzel from '@/components/Carouzel'
 import Location from '@/components/Location'
 import CTA from '@/components/CTA'
+import Link from 'next/link'
 
 const HomePage = () => {
   return (
     <section className='py-4'>
       <div className='container space-y-5'>
-        <div className='flex items-center gap-4'>
-          <Avatar className='h-16 w-16 p-0'>
-            <AvatarImage src='aw-image-700.webp' className='object-cover' />
-            <AvatarFallback>EF</AvatarFallback>
-          </Avatar>
+        <Link href='/'>
+          <div className='flex items-center gap-4'>
+            <Avatar className='h-16 w-16 p-0'>
+              <AvatarImage src='aw-image-700.webp' className='object-cover' />
+              <AvatarFallback>EF</AvatarFallback>
+            </Avatar>
 
-          <h1 className='text-2xl'>Essential Fitness</h1>
-        </div>
+            <h1 className='text-2xl '>Essential Fitness</h1>
+          </div>
+        </Link>
+
         <Carouzel />
         <div className='md:hidden'>
           <CTA />
