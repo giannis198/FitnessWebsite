@@ -2,10 +2,10 @@ import Social from './Social'
 
 const Contact = () => {
   return (
-    <div className=''>
+    <section>
       <h2 className='font-bold  underline md:text-xl'>Επικοινωνία</h2>
       <Social />
-    </div>
+    </section>
   )
 }
 
