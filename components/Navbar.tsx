@@ -6,13 +6,13 @@ import Social from './Social'
 const Navbar = () => {
   return (
     <nav className='flex w-full flex-col items-center justify-center space-y-4 rounded-lg'>
-      {/* <Link href='/'>
+      <Link href='/'>
         <Image
           src={img}
           alt='Essential fitness'
           className='rounded-lg object-cover'
         />
-      </Link> */}
+      </Link>
       {/* <div className='container flex space-x-4'>
         <Link href='#classes' className='text-sm'>
           Classes
