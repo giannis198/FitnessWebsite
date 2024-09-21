@@ -28,8 +28,8 @@ const images = [entrance, lobby, img1, img2, img3, img4, img5, img6]
 const Carouzel = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }))
   return (
-    <div className='w-full items-center justify-between md:flex md:pr-12'>
-      <div className='flex w-1/3 flex-col  justify-center'>
+    <section className='w-full items-center justify-between md:flex md:pr-12'>
+      <div className='flex w-full flex-col  justify-center md:w-1/3 '>
         <p className='hidden pb-5 md:block md:text-3xl'>
           Η αποστολή μας είναι να παρέχουμε ένα μέρος όπου η προπόνηση όλων
           βασίζεται στις Essential ανάγκες.
@@ -47,10 +47,10 @@ const Carouzel = () => {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent>
+        <CarouselContent className='mx-0 px-0'>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className='p-1'>
+              <div className=''>
                 <Image src={image} alt='' />
               </div>
             </CarouselItem>
@@ -59,7 +59,7 @@ const Carouzel = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </section>
   )
 }
 

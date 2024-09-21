@@ -14,7 +14,8 @@ const openingHours: OpeningHours = {
   2: { open: [8, 0], close: [22, 30] }, // Tuesday
   3: { open: [8, 0], close: [22, 30] }, // Wednesday
   4: { open: [8, 0], close: [22, 30] }, // Thursday
-  5: { open: [8, 0], close: [22, 30] } // Friday
+  5: { open: [8, 0], close: [22, 30] }, // Friday
+  6: { open: [8, 0], close: [20, 0] } // Saturday
 }
 
 export const isOpenNow = () => {
@@ -23,7 +24,7 @@ export const isOpenNow = () => {
   const hour = now.getHours()
   const minute = now.getMinutes()
 
-  if (day === 0 || day === 6) return false // Closed on Sunday and Saturday
+  if (day === 0) return false // Closed on Sunday
 
   const { open, close } = openingHours[day]
   const openTime = open[0] * 60 + open[1]

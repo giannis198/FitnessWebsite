@@ -5,12 +5,12 @@ import Social from './Social'
 
 const Navbar = () => {
   return (
-    <nav className='flex w-full flex-col items-center justify-center space-y-4 rounded-lg'>
+    <nav className='flex w-full flex-col items-center justify-center space-y-4 rounded-lg bg-[#EEE8D4]'>
       <Link href='/'>
         <Image
           src={img}
           alt='Essential fitness'
-          className='rounded-lg object-cover'
+          className='rounded-lg object-contain'
         />
       </Link>
       {/* <div className='container flex space-x-4'>

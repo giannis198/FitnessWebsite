@@ -10,12 +10,14 @@ import Carouzel from '@/components/Carouzel'
 import Location from '@/components/Location'
 import CTA from '@/components/CTA'
 import Link from 'next/link'
+import Header36 from '@/components/Header36'
+import { Contact14 } from '@/components/Contact14'
 
 const HomePage = () => {
   return (
-    <section className='py-4'>
-      <div className='container space-y-5'>
-        <Link href='/'>
+    <section>
+      <div className=' space-y-5 '>
+        {/* <Link href='/'>
           <div className='flex items-center gap-4'>
             <Avatar className='h-16 w-16 p-0'>
               <AvatarImage src='aw-image-700.webp' className='object-cover' />
@@ -24,19 +26,23 @@ const HomePage = () => {
 
             <h1 className='text-2xl '>Essential Fitness</h1>
           </div>
-        </Link>
+        </Link> */}
 
-        <Carouzel />
-        <div className='md:hidden'>
-          <CTA />
+        {/* <Carouzel /> */}
+        <Header36 />
+        <div className='space-y-4 md:hidden'>
+          <WorkingTime />
+          {/* <CTA /> */}
+          <About />
         </div>
 
-        <WorkingTime />
-        <Separator />
-        <Classes />
-        <Location />
-        <About />
-        <Contact />
+        <div className=' '>
+          <Separator />
+          <div className='mt-4 space-y-4'>
+            <Classes />
+            <Contact14 />
+          </div>
+        </div>
       </div>
     </section>
   )

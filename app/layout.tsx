@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { TextSizeProvider } from '@/components/textSize-provider'
+import WidgetCTA from '@/components/WidgetCTA'
 
 const inter = Montserrat({ subsets: ['latin'] })
 
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} ove flex min-h-screen flex-col`}>
+      <body className={`${inter.className} flex min-h-screen flex-col`}>
         <TextSizeProvider>
           <ThemeProvider
             attribute='class'
@@ -37,6 +38,7 @@ export default function RootLayout({
               <Navbar />
               <main className='flex-1 overflow-x-hidden'>{children}</main>
               <Widget />
+              <WidgetCTA />
               <Footer />
             </div>
           </ThemeProvider>

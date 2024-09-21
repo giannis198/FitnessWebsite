@@ -51,7 +51,7 @@ function Widget() {
   return (
     <>
       <Sheet>
-        <SheetTrigger className='fixed  right-5 top-1/2 rounded-full bg-blue-600 ring-2 ring-blue-100 transition-all hover:bg-blue-300'>
+        <SheetTrigger className='fixed right-5 top-1/2 rounded-full bg-blue-600 ring-2 ring-blue-100 transition-all hover:bg-blue-300'>
           <div className='hidden md:flex'>
             <PersonStanding size={64} color='white' />
           </div>
