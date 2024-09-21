@@ -5,7 +5,7 @@ import Social from './Social'
 
 const Navbar = () => {
   return (
-    <nav className='flex w-full flex-col items-center justify-center space-y-4 rounded-lg bg-[#EEE8D4]'>
+    <nav className='flex w-full items-center justify-center space-y-4 rounded-lg bg-[#EEE8D4]'>
       <Link href='/'>
         <Image
           src={img}

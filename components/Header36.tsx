@@ -29,9 +29,9 @@ const Header36 = () => {
   return (
     <section
       id='relume'
-      className='grid grid-cols-1 items-center gap-y-16 pt-16 md:pt-24 lg:grid-cols-2 lg:pt-0'
+      className=' grid grid-cols-1 items-center gap-y-16 md:pt-24 lg:grid-cols-2 lg:pt-0 '
     >
-      <div className='mx-[5%] sm:max-w-md md:justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-start'>
+      <div className='order-2 mx-[5%] sm:max-w-md md:justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-start'>
         <h1 className='lg:text-10xl mb-5 text-4xl font-bold md:mb-6 md:text-6xl'>
           Μεταμόρφωσε το Σώμα σου με Personal Training & Pilates
         </h1>
@@ -48,10 +48,7 @@ const Header36 = () => {
           <CTA />
         </div>
       </div>
-      <div className='space-y-2'>
-        <p className='container text-lg font-bold underline md:hidden md:text-2xl'>
-          Αίθουσες Γυμναστηρίου
-        </p>
+      <div className='order-1 lg:order-2'>
         <Carousel
           plugins={[plugin.current]}
           className='flex w-full'
@@ -67,8 +64,8 @@ const Header36 = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {/* <CarouselPrevious />
+          <CarouselNext /> */}
         </Carousel>
       </div>
     </section>
