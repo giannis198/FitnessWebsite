@@ -92,6 +92,23 @@ export const Contact14 = () => {
               </Link>
             </div>
           </div>
+          <div className='flex items-center space-x-4'>
+            <Link href='https://www.facebook.com/profile.php?id=61550994177401'>
+              <Image
+                src={facebook}
+                alt='facebook'
+                className='h-6 w-6 md:block md:h-10 md:w-10'
+              />
+            </Link>
+
+            <Link href='https://www.instagram.com/essential_fitness__?igsh=cm5meTdscnZpZHhk'>
+              <Image
+                src={instagram}
+                alt='instagram'
+                className='h-6 w-6 md:block md:h-10 md:w-10'
+              />
+            </Link>
+          </div>
         </div>
         <div className='hidden lg:block'>
           <Link
