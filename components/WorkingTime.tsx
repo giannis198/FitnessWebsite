@@ -36,12 +36,12 @@ const WorkingTime = () => {
             {openNow ? 'Ανοιχτά' : 'Κλειστά'}
           </AccordionTrigger>
           <AccordionContent>
-            <Day day='Δευτέρα' hour='8:00 - 22:30' />
-            <Day day='Τρίτη' hour='8:00 - 22:30' />
-            <Day day='Τετάρτη' hour='8:00 - 22:30' />
-            <Day day='Πέμπτη' hour='8:00 - 22:30' />
-            <Day day='Παρασκευή' hour='8:00 - 22:30' />
-            <Day day='Σάββατο' hour='8:00 - 20:00' />
+            <Day day='Δευτέρα' hour='08:00 - 22:30' />
+            <Day day='Τρίτη' hour='08:00 - 22:30' />
+            <Day day='Τετάρτη' hour='08:00 - 22:30' />
+            <Day day='Πέμπτη' hour='08:00 - 22:30' />
+            <Day day='Παρασκευή' hour='08:00 - 22:30' />
+            <Day day='Σάββατο' hour='10:00 - 15:00' />
             <Day day='Κυριακή' hour='Κλειστά' />
           </AccordionContent>
         </AccordionItem>
